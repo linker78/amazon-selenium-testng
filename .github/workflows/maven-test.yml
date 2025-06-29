@@ -1,0 +1,29 @@
+name: Maven TestNG CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Build and test with Maven
+      run: mvn clean test
+
+    - name: Upload Surefire Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: surefire-report
+        path: target/surefire-reports/
