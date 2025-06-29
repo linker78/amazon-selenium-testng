@@ -1,0 +1,8 @@
+com\amazon\automation\base\BaseTest.class
+com\amazon\automation\tests\AmazonSearchTest.class
+com\amazon\automation\tests\WishlistFunctionalityTest.class
+com\amazon\automation\tests\AddToCartScenarioTest.class
+com\amazon\automation\tests\AmazonLoginTest.class
+com\amazon\automation\tests\AmazonScenarioTest.class
+com\amazon\automation\AmazonSearchTest.class
+com\amazon\automation\tests\FilterSearchResultsTest.class

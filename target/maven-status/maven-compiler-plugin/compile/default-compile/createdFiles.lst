@@ -1,0 +1,7 @@
+com\amazon\automation\base\BasePage.class
+com\amazon\automation\utils\PopupHandler.class
+com\amazon\automation\pages\AmazonHomePage.class
+com\amazon\automation\utils\Locators.class
+com\amazon\automation\pages\AmazonProductPage.class
+com\amazon\automation\utils\WaitUtils.class
+com\amazon\automation\pages\AmazonSignInPage.class

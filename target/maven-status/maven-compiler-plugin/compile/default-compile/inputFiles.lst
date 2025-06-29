@@ -1,3 +1,7 @@
-D:\local\amazon-selenium-testng\src\main\java\com\amazon\automation\base\BaseTest.java
+D:\local\amazon-selenium-testng\src\main\java\com\amazon\automation\base\BasePage.java
 D:\local\amazon-selenium-testng\src\main\java\com\amazon\automation\pages\AmazonHomePage.java
+D:\local\amazon-selenium-testng\src\main\java\com\amazon\automation\pages\AmazonProductPage.java
+D:\local\amazon-selenium-testng\src\main\java\com\amazon\automation\pages\AmazonSignInPage.java
+D:\local\amazon-selenium-testng\src\main\java\com\amazon\automation\utils\Locators.java
+D:\local\amazon-selenium-testng\src\main\java\com\amazon\automation\utils\PopupHandler.java
 D:\local\amazon-selenium-testng\src\main\java\com\amazon\automation\utils\WaitUtils.java

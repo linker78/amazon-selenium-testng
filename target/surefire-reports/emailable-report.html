@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">89,538</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.automation.tests.AddToCartScenarioTest</td><td><a href="#m0">addProductToCartAndVerify</a></td><td rowspan="1">1751205539884</td><td rowspan="1">16807</td></tr><tr class="failedodd"><td rowspan="2">com.amazon.automation.tests.AmazonScenarioTest</td><td><a href="#m1">searchProductScenario</a></td><td rowspan="1">1751205569175</td><td rowspan="1">12323</td></tr><tr class="failedodd"><td><a href="#m2">signInScenario</a></td><td rowspan="1">1751205582169</td><td rowspan="1">1184</td></tr><tr class="failedeven"><td rowspan="1">com.amazon.automation.tests.AmazonSearchTest</td><td><a href="#m3">testAmazonSearch</a></td><td rowspan="1">1751205583983</td><td rowspan="1">11386</td></tr><tr class="failedodd"><td rowspan="1">com.amazon.automation.tests.FilterSearchResultsTest</td><td><a href="#m4">filterByBrandAndVerifyResults</a></td><td rowspan="1">1751205596042</td><td rowspan="1">6182</td></tr><tr class="failedeven"><td rowspan="1">com.amazon.automation.tests.WishlistFunctionalityTest</td><td><a href="#m5">addAndRemoveFromWishlist</a></td><td rowspan="1">1751205602869</td><td rowspan="1">17754</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.automation.AmazonSearchTest</td><td><a href="#m6">testAmazonSearch</a></td><td rowspan="1">1751205532787</td><td rowspan="1">6466</td></tr><tr class="passedodd"><td rowspan="1">com.amazon.automation.tests.AmazonLoginTest</td><td><a href="#m7">testLogin</a></td><td rowspan="1">1751205557313</td><td rowspan="1">11207</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">com.amazon.automation.tests.AddToCartScenarioTest#addProductToCartAndVerify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div.s-main-slot div[data-component-type=&apos;s-search-result&apos;] h2 a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63749}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63749/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23d083ef4b28bc977cc31566cce7f69a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.amazon.automation.pages.AmazonHomePage.selectFirstProduct(AmazonHomePage.java:43)
+	at com.amazon.automation.tests.AddToCartScenarioTest.addProductToCartAndVerify(AddToCartScenarioTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.amazon.automation.tests.AmazonScenarioTest#searchProductScenario</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: twotabsearchtextbox (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63914/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 948deb906d080f59004a28e72b6c8cd6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.amazon.automation.pages.AmazonHomePage.enterSearchTerm(AmazonHomePage.java:29)
+	at com.amazon.automation.tests.AmazonScenarioTest.searchProductScenario(AmazonScenarioTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.amazon.automation.tests.AmazonScenarioTest#signInScenario</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email_login&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bb5206c17983d7f0aa30818074735cf, findElement {using=id, value=ap_email_login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63944/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bb5206c17983d7f0aa30818074735cf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.amazon.automation.pages.AmazonSignInPage.enterEmail(AmazonSignInPage.java:13)
+	at com.amazon.automation.tests.AmazonScenarioTest.signInScenario(AmazonScenarioTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.amazon.automation.tests.AmazonSearchTest#testAmazonSearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: twotabsearchtextbox (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63968/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 670c2fde7a3041d1146fffe197255159
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.amazon.automation.pages.AmazonHomePage.enterSearchTerm(AmazonHomePage.java:29)
+	at com.amazon.automation.tests.AmazonSearchTest.testAmazonSearch(AmazonSearchTest.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.amazon.automation.tests.FilterSearchResultsTest#filterByBrandAndVerifyResults</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; name=&quot;&quot; value=&quot;&quot; aria-hidden=&quot;true&quot; tabindex=&quot;-1&quot;&gt; is not clickable at point (388, 716). Other element would receive the click: &lt;i class=&quot;a-icon a-icon-checkbox&quot;&gt;&lt;/i&gt;
+  (Session info: chrome=137.0.7151.120)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9bc640b9dbf66745411e9f3808eb6b9, clickElement {id=f.0F6F95D13A439DD398908307F84548FE.d.4F7CA7F783D45D574674FB0919E385DC.e.126}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63998}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63998/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e9bc640b9dbf66745411e9f3808eb6b9)] -&gt; xpath: //ul[contains(@id, &apos;filter&apos;)]//a[contains(@aria-label,&apos;HP&apos;)]//input]
+Session ID: e9bc640b9dbf66745411e9f3808eb6b9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.amazon.automation.tests.FilterSearchResultsTest.filterByBrandAndVerifyResults(FilterSearchResultsTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.amazon.automation.tests.WishlistFunctionalityTest#addAndRemoveFromWishlist</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div.s-main-slot div[data-component-type=&apos;s-search-result&apos;] h2 a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64049}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64049/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a555b88313a7481eff76f2b4b5650d09
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.amazon.automation.tests.WishlistFunctionalityTest.addAndRemoveFromWishlist(WishlistFunctionalityTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.amazon.automation.AmazonSearchTest#testAmazonSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.amazon.automation.tests.AmazonLoginTest#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

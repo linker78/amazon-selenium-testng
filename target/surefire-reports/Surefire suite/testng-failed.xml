@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.amazon.automation.tests.WishlistFunctionalityTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loadConfig"/>
+          <include name="addAndRemoveFromWishlist"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.amazon.automation.tests.WishlistFunctionalityTest -->
+      <class name="com.amazon.automation.tests.FilterSearchResultsTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="setUp"/>
+          <include name="filterByBrandAndVerifyResults"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.amazon.automation.tests.FilterSearchResultsTest -->
+      <class name="com.amazon.automation.tests.AddToCartScenarioTest">
+        <methods>
+          <include name="addProductToCartAndVerify"/>
+          <include name="setUp"/>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.amazon.automation.tests.AddToCartScenarioTest -->
+      <class name="com.amazon.automation.tests.AmazonScenarioTest">
+        <methods>
+          <include name="searchProductScenario"/>
+          <include name="signInScenario"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.amazon.automation.tests.AmazonScenarioTest -->
+      <class name="com.amazon.automation.tests.AmazonSearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testAmazonSearch"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.amazon.automation.tests.AmazonSearchTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

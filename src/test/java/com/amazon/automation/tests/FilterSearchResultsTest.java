@@ -33,6 +33,7 @@ public class FilterSearchResultsTest extends BaseTest {
         homePage.enterSearchTerm("laptop");
         homePage.clickSearch();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        
         // Wait for filter sidebar
         wait.until(ExpectedConditions.visibilityOfElementLocated(com.amazon.automation.utils.Locators.FILTER_SIDEBAR));
         // Click on a brand filter (e.g., HP) using locator from Locators
